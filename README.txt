@@ -4,7 +4,7 @@ Website sederhana untuk GitHub Pages.
 
 ## Folder
 
-- `assets/music/music.mp3` → ganti dengan lagu kamu
+- `assets/music/about-you.mp3` → ganti dengan lagu kamu
 - `assets/video/video.mp4` → ganti dengan video kamu
 - `index.html` → halaman utama
 - `style.css` → tampilan/animasi
