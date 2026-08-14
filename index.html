@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080c">
+  <title>My Music Experience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="bg"></div>
+  <div class="noise"></div>
+
+  <!-- MUSIC MENU -->
+  <main id="musicScreen" class="screen active">
+    <div class="music-card">
+      <div class="disc">
+        <div class="disc-center"></div>
+      </div>
+
+      <p class="small-title">WELCOME</p>
+      <h1>My Little<br><span>Music World</span></h1>
+      <p class="subtitle">Put your headphones on and enjoy.</p>
+
+      <div class="track">
+        <div>
+          <strong>Your Song</strong>
+          <small>My favorite music</small>
+        </div>
+        <div id="musicTime">00:00</div>
+      </div>
+
+      <button id="playMusic" class="main-btn">
+        <span id="playIcon">▶</span>
+        <span id="playText">PLAY MUSIC</span>
+      </button>
+
+      <p class="hint">Music must be played before starting the video.</p>
+    </div>
+  </main>
+
+  <!-- START VIDEO MENU -->
+  <main id="startScreen" class="screen hidden">
+    <div class="start-card">
+      <div class="mini-disc">♫</div>
+      <p class="small-title">MUSIC IS ON</p>
+      <h2>Ready?</h2>
+      <p class="subtitle">Now let's start the video.</p>
+
+      <button id="startVideo" class="main-btn">
+        <span>✦</span>
+        START VIDEO
+      </button>
+
+      <button id="backMusic" class="text-btn">← Back to music</button>
+    </div>
+  </main>
+
+  <!-- VIDEO -->
+  <section id="videoScreen" class="video-screen hidden">
+    <video id="mainVideo" playsinline preload="auto">
+      <source src="assets/video/video.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video.
+    </video>
+
+    <div class="video-overlay">
+      <button id="pauseVideo" class="pause-btn">Ⅱ</button>
+    </div>
+
+    <div class="video-caption">
+      <p>ENJOY THE MOMENT</p>
+      <h2>Your Story Starts Here.</h2>
+    </div>
+  </section>
+
+  <!-- AUDIO -->
+  <audio id="music" preload="auto">
+    <source src="assets/music/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
